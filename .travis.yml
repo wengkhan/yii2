@@ -11,7 +11,7 @@ addons:
   sonarcloud:
     organization: kimfml
     token:
-      secure: •••••••••••••••• 
+      secure: ••••••••••••••••
  
 git:
   depth: false 
