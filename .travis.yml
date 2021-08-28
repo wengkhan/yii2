@@ -12,12 +12,14 @@ addons:
     organization: kimfml
     token:
       secure: ••••••••••••••••
- 
+      
+dist: xenial 
 git:
   depth: false 
 
 env:
-  - SYMFONY_VERSION="dev-master" DB=mysql
+  global:
+    - PIPENV_IGNORE_VIRTUALENVS=1
 
 install: composer update --no-interaction --no-suggest --no-progress
 
