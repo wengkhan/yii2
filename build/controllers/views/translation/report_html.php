@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 ?><!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Translation report</title>
