@@ -43,7 +43,7 @@ case $1 in
     export ISOLATION=buildpipeline${CI_PIPELINE_ID}
     export COMPOSE_PROJECT_NAME=${ISOLATION}pgsql
     docker-compose up -d
-    docker-compose run --rm php bash -c 'while [ true ]; do curl postgres:5432; if [ $? == 52 ]; then break; fi; ((c++)) && ((c==25)) && break; sleep 2; done'
+    docker-compose run --rm php bash -c 'while [ true ]; do curl postgres:3308; if [ $? == 52 ]; then break; fi; ((c++)) && ((c==25)) && break; sleep 2; done'
     docker-compose run --rm php vendor/bin/phpunit -v --group pgsql
     docker-compose down -v
   ;;
